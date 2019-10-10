@@ -1,0 +1,16 @@
+server:
+  port: 8991
+
+spring:
+  application:
+    name: LUCKYGOU-ZUUL
+
+
+#路由配置
+zuul:
+  ignoredServices: '*' #只能通过路由访问，不能使用服务名访问
+  routes:
+    plat:
+      serviceId: LUCKYGOU-PLAT
+      path: /plat/**
+  prefix: /services
