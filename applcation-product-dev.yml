@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: LUCKYGOU-PRODUCT
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///luckygou-product?serverTimezone=GMT%2B8
+    username: root
+    password: 19970702
 mybatis-plus:
   mapper-locations: classpath*:cn/itsource/luckygou/mapper/*Mapper.xml
 
