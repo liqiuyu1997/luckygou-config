@@ -13,4 +13,7 @@ zuul:
     plat:
       serviceId: LUCKYGOU-PLAT
       path: /plat/**
+    product:
+      serviceId: LUCKYGOU-PRODUCT
+      path: /product/**
   prefix: /services
