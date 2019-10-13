@@ -3,5 +3,7 @@ server:
 spring:
   application:
     name: LUCKYGOU-PRODUCT
+mybatis-plus:
+  mapper-locations: classpath*:cn/itsource/luckygou/mapper/*Mapper.xml
 
  
