@@ -1,0 +1,33 @@
+server:
+  port: 8991
+
+spring:
+  application:
+    name: LUCKYGOU-ZUUL
+
+
+#路由配置
+zuul:
+  ignoredServices: '*' #只能通过路由访问，不能使用服务名访问
+  routes:
+    plat:
+      serviceId: LUCKYGOU-PLAT
+      path: /plat/**
+    product:
+      serviceId: LUCKYGOU-PRODUCT
+      path: /product/**
+    common:
+      serviceId: LUCKYGOU-COMMON
+      path: /common/**
+  prefix: /services
+#zuul超时时间的设置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
+ribbon:
+  ConnectTimeout: 6000
+  ReadTimeout: 6000
