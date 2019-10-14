@@ -5,7 +5,7 @@ spring:
     name: LUCKYGOU-PRODUCT
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql:///luckygou-product
+    url: jdbc:mysql:///luckygou-product?serverTimezone=GMT%2B8
     username: root
     password: 19970702
 mybatis-plus:
