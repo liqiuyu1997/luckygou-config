@@ -16,4 +16,7 @@ zuul:
     product:
       serviceId: LUCKYGOU-PRODUCT
       path: /product/**
+    common:
+      serviceId: LUCKYGOU-COMMON
+      path: /common/**
   prefix: /services
